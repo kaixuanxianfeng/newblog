@@ -11,7 +11,7 @@ class Comment(models.Model):
     )
 
     target = models.ForeignKey(Post,on_delete=models.CASCADE, verbose_name='评论目标')
-    name = models.CharField(max_length=2000, verbose_name='内容')
+    content = models.CharField(max_length=2000, verbose_name='内容')
     nickname = models.CharField(max_length=50, verbose_name='昵称')
     website = models.URLField(verbose_name='网站')
     email = models.EmailField(verbose_name='邮箱')
