@@ -34,7 +34,7 @@ class SideBar(models.Model):
     DISPLAY_HTML = 1
     DISPLAY_LATEST = 2
     DISPLAY_HOT = 3
-    DISPLAY_COMMENT = 3
+    DISPLAY_COMMENT = 4
 
     SIDE_TYPE = (
         (DISPLAY_HTML, 'HTML'),
@@ -71,12 +71,12 @@ class SideBar(models.Model):
             context = {
                 'posts' : Post.get_latest_posts()
             }
-            result = render_to_string('config/blocks/sidebar_post.html', context)
+            result = render_to_string('config/blocks/sidebar_posts.html', context)
         elif self.display_type == self.DISPLAY_HOT:
             context = {
                 'posts' : Post.hot_posts()
             }
-            result = render_to_string('config/blocks/sidebar_post.html', context)
+            result = render_to_string('config/blocks/sidebar_posts.html', context)
         elif self.display_type == self.DISPLAY_COMMENT:
             context = {
                 'comments' : Comment.objects.filter(status=Comment.STATUS_NORMAL)

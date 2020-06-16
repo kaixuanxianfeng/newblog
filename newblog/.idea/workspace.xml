@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de09635c-b912-4f2b-bafd-81b5ae27e6a6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/newblog/themes/default/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/newblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/newblog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/adminforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/adminforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newblog/base_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/base_admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newblog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newblog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newblog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/default/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newblog/templates/blog/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newblog/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/default/templates/blog/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newblog/templates/config/blocks/sidebar_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/default/templates/config/blocks/sidebar_comments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newblog/templates/config/blocks/sidebar_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/default/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/comment/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/comment/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/config/blocks/sidebar_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/themes/bootstrap/templates/config/blocks/sidebar_comments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/newblog/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,15 +57,20 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -84,7 +96,12 @@
       <workItem from="1590107593667" duration="37000" />
       <workItem from="1590202678802" duration="4891000" />
       <workItem from="1590290864961" duration="9766000" />
-      <workItem from="1590450160186" duration="8882000" />
+      <workItem from="1590450160186" duration="40854000" />
+      <workItem from="1591571684502" duration="114000" />
+      <workItem from="1591571946623" duration="365000" />
+      <workItem from="1591572417658" duration="101000" />
+      <workItem from="1591572568672" duration="5802000" />
+      <workItem from="1592033423472" duration="16290000" />
     </task>
     <servers />
   </component>
@@ -96,5 +113,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590291229313" />
+    <state x="366" y="0" width="634" height="728" key="find.popup" timestamp="1591142759710">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="366" y="0" width="634" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1591142759710" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592036924007">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592036924007" />
   </component>
 </project>

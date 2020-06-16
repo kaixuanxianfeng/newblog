@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/newblog.iml" filepath="$PROJECT_DIR$/.idea/newblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../ProgramData/Anaconda3/Lib/site-packages/xadmin/.idea/xadmin.iml" filepath="$PROJECT_DIR$/../../../../ProgramData/Anaconda3/Lib/site-packages/xadmin/.idea/xadmin.iml" />
     </modules>
   </component>
 </project>

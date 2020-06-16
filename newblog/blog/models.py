@@ -1,5 +1,7 @@
+import mistune
 from django.contrib.auth.models import User
 from django.db import models
+
 
 # Create your models here.
 class Category(models.Model):
@@ -39,6 +41,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = verbose_name_plural ='分类'
 
+
 class Tag(models.Model):
     STATUS_NORMAL = 1
     STATUS_DELETE = 0
@@ -72,6 +75,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255, verbose_name='标题')
     desc = models.CharField(max_length=1024, blank=True, verbose_name = '摘要')
     content = models.TextField(help_text='正文必须为MarkDown格式', verbose_name='正文')
+    content_html = models.TextField(verbose_name='正文HTML', blank=True, editable=False)
     status = models.PositiveIntegerField(default=STATUS_NORMAL, choices=STATUS_ITEMS, verbose_name='状态')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='分类')
     tag = models.ManyToManyField(Tag, verbose_name='标签')
@@ -79,6 +83,7 @@ class Post(models.Model):
     created_time = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     pv = models.PositiveIntegerField(default=1)
     uv = models.PositiveIntegerField(default=1)
+    is_md = models.BooleanField(default=False, verbose_name='Markdown 语法')
 
     @classmethod
     def hot_posts(cls):
@@ -86,6 +91,15 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        if self.is_md:
+
+            self.content_html = mistune.markdown(self.content)
+        else:
+            self.content_html = self.content
+        super().save(*args, **kwargs)
+
 
     @staticmethod
     def get_by_tag(tag_id):

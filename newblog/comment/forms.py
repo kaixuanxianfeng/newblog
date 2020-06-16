@@ -1,3 +1,4 @@
+import mistune
 from django import forms
 from .models import Comment
 
@@ -37,6 +38,7 @@ class CommentForm(forms.ModelForm):
 
     def clean_content(self):
         content = self.cleaned_data.get('content')
+        content = mistune.markdown(content)
         if len(content) < 10:
             raise forms.ValidationError('too short')
         return content
